@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- infodialog -->
+	<zorder>2</zorder>
+	<controls>
+		<!-- Main group -->
+		<control type="group">
+			<include>NotificationAnimation</include>
+			<centerleft>50%</centerleft>
+			<top>26</top>
+			<width>938</width>
+			<height>163</height>
+			<!-- Background image -->
+			<control type="image">
+				<centerleft>50%</centerleft>
+				<width>100%</width>
+				<height>100%</height>
+				<texture border="4">dialogs/notification_back.png</texture>
+			</control>
+			<!-- Icon back -->
+			<control type="image">
+				<left>26</left>
+				<top>26</top>
+				<width>111</width>
+				<height>111</height>
+				<texture>dialogs/notification_icon.png</texture>
+			</control>
+			<!-- Info -->
+			<control id="400" type="image">
+				<left>26</left>
+				<top>26</top>
+				<width>111</width>
+				<height>111</height>
+				<texture>dialogs/notification_info.png</texture>
+			</control>
+			<!-- Info -->
+			<control id="403" type="image">
+				<left>26</left>
+				<top>26</top>
+				<width>111</width>
+				<height>111</height>
+				<texture>dialogs/notification_info.png</texture>
+				<visible>false</visible>
+			</control>
+			<!-- Warning -->
+			<control id="404" type="image">
+				<left>26</left>
+				<top>26</top>
+				<width>111</width>
+				<height>111</height>
+				<texture>dialogs/notification_warning.png</texture>
+				<visible>false</visible>
+			</control>
+			<!-- Error -->
+			<control id="405" type="image">
+				<left>26</left>
+				<top>26</top>
+				<width>111</width>
+				<height>111</height>
+				<texture>dialogs/notification_error.png</texture>
+				<visible>false</visible>
+			</control>
+			<!-- Heading -->
+			<control id="401" type="label">
+				<left>160</left>
+				<top>42</top>
+				<width>752</width>
+				<height>31</height>
+				<font>Light31</font>
+				<textcolor>fff6f6f6</textcolor>
+			</control>
+			<!-- Details -->
+			<control id="402" type="label">
+				<left>160</left>
+				<top>94</top>
+				<width>752</width>
+				<height>26</height>
+				<font>Light26</font>
+				<scroll>true</scroll>
+				<textcolor>fffbbb45</textcolor>
+			</control>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,177 @@
+1.2.4
+
+Fixed custom action #8 not displaying
+
+1.2.3
+
+Fixed missing scroll tag
+Fixed wrong font tag
+
+1.2.2
+
+Fixed home square and square info lists
+
+1.2.1
+
+Fixed renaming of custom items
+
+1.2.0
+
+Re-designed home customisation
+Added progress bar to seek dialog
+Added fallback icon for select dialog
+Fixed 'Save playlist' button in video playlists
+
+1.1.0
+
+Fixed select dialog heading
+Fixed 'Not Rated' MPAA flag
+Fixed TV Show rating
+Fixed Search rating
+
+1.0.4
+
+Fixed German ratings
+Fixed My Songs view type button
+
+1.0.3
+
+Updated German strings
+Fixed My Songs view type button
+
+1.0.2
+
+More localisation
+
+1.0.1
+
+Fixed album/artist info dialog description
+Added 'Add-on Information' button to My Programs
+
+1.0.0
+
+Added 'Open 'Visualiser' button to music
+Added start up widgets
+Fixed Music button focus problem
+Fixed initial focus for new view types
+More localisation
+
+0.1.0
+
+Added more views for music addons
+Fixed Next Up notification problem
+Updated German language (thanks to b711)
+
+0.0.98
+
+Added Next Up script support
+Added Next Up script labels to debug info
+Added option for non-English sized buttons
+Added Party Mode to music
+Added role to Extended Info actor list
+Fixed text colour for number dialog
+Removed Chapter number for seek
+
+0.0.97
+
+Added new view types for non-library content
+Added Hide Watched button
+Added Chapter number to seek
+Added Party Mode button for Music Videos
+Fixed fullscreen video info problem
+Fixed Starring label in extenedinfo script
+
+0.0.96
+
+Fixed logos on home widgets
+
+0.9.95
+
+More localisation
+Fixed UK rating
+Added 12A UK rating
+Added View type button
+Added German language (thanks to b711)
+
+0.9.94
+
+Added 12A UK rating flag
+
+0.9.93
+
+Fixed home TV show widget wide icon problem
+Fixed Picture and Program widget favourite problem
+
+0.9.92
+
+Fixed home widget visibility conditions
+
+0.9.91
+
+Fixed video osd navigation
+Changed OSD button colours
+
+0.9.9
+
+Added video and music osd controls option
+Cleaned up music osd control layout
+
+0.9.81
+
+Fixed some language strings
+Fixed Addon Info label
+Added Artist Slideshow support
+
+0.9.8
+
+More localisation
+
+0.9.7
+
+Added 'Season...' label at season level
+Fixed Global Search star rating and rating
+More cleanup work
+
+0.9.61
+
+Removed unused strings
+
+0.9.6
+
+Strings moved to language file
+Added Next Aired info to TV show info
+
+0.9.5
+
+Added playlists to home widgets
+
+0.9.4
+
+Added Home Widgets customisation
+
+0.9.3
+
+Fixed unwatched episode thumbs for non-library items
+Fixed wide TV show icon bug on home screen
+Added option for separate TV show and Season wide icons
+
+0.9.2
+
+Added 'Photos' widget
+Added more script to debug info
+Added rating support for UK and Germany
+Added Global Search script support
+Changed 'Update library' and 'View options' button layout
+Changed 'Season 0' to 'Special'
+
+0.9.1
+
+Fixed cache bar visiblity
+Fixed passthrough audio volume dialog
+Added support for script-ExtendedInfo Script-DialogVideoInfo
+Added scripts to the debug dialog
+Couple of Isengard fixes
+
+0.9.0
+
+Alpha release

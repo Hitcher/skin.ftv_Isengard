@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- networksetup -->
+	<defaultcontrol always="true">10</defaultcontrol>
+	<controls>
+		<include>DialogBackgroundImage</include>
+		<!-- Main group -->
+		<control type="group">
+			<include>DialogAnimation</include>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1337</width>
+			<height>480</height>
+			<control type="image">
+				<width>1337</width>
+				<height>480</height>
+				<texture>dialogs/network_back.png</texture>
+			</control>
+			<!-- Heading -->
+			<control type="label" id="2">
+				<left>40</left>
+				<top>14</top>
+				<height>30</height>
+				<width>419</width>
+				<aligny>center</aligny>
+				<font>Bold30</font>
+				<label>1007</label>
+				<textcolor>ffdadada</textcolor>
+			</control>
+			<!-- Group -->
+			<control type="grouplist" id="9000">
+				<top>60</top>
+				<width>937</width>
+				<height>420</height>
+				<itemgap>0</itemgap>
+				<onleft>Back</onleft>
+				<onright>9001</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<scrolltime>0</scrolltime>
+				<!-- Protocol -->
+				<control type="spincontrolex" id="10">
+					<width>937</width>
+					<height>84</height>
+					<label>1008</label>
+					<font>Light32</font>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				</control>
+				<control type="group" id="99">
+					<top>84</top>
+					<width>937</width>
+					<height>84</height>
+					<!-- Server Address -->
+					<control type="edit" id="11">
+						<width>737</width>
+						<height>84</height>
+						<onup>10</onup>
+						<ondown>16</ondown>
+						<onright>12</onright>
+						<label>-</label>
+						<font>Light32</font>
+						<textoffsetx>40</textoffsetx>
+						<textcolor>ff505153</textcolor>
+						<focusedcolor>ffffaf37</focusedcolor>
+						<texturefocus border="3">settings/button_focus.png</texturefocus>
+						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					</control>
+					<!-- Server Browse -->
+					<control type="button" id="12">
+						<left>737</left>
+						<align>right</align>
+						<width>200</width>
+						<height>84</height>
+						<onup>10</onup>
+						<ondown>16</ondown>
+						<onleft>11</onleft>
+						<label>1024</label>
+						<font>Light32</font>
+						<textoffsetx>40</textoffsetx>
+						<textcolor>ff505153</textcolor>
+						<focusedcolor>ffffaf37</focusedcolor>
+						<texturefocus border="3">settings/button_focus.png</texturefocus>
+						<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+					</control>
+				</control>
+				<!-- Remote -->
+				<control type="edit" id="16">
+					<top>168</top>
+					<width>937</width>
+					<height>84</height>
+					<label>-</label>
+					<font>Light32</font>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				</control>
+				<!-- Port -->
+				<control type="edit" id="13">
+					<top>252</top>
+					<width>937</width>
+					<height>84</height>
+					<label>1013</label>
+					<font>Light32</font>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				</control>
+				<!-- Username -->
+				<control type="edit" id="14">
+					<top>336</top>
+					<width>937</width>
+					<height>84</height>
+					<label>1014</label>
+					<font>Light32</font>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				</control>
+				<!-- Password -->
+				<control type="edit" id="15">
+					<top>420</top>
+					<width>937</width>
+					<height>84</height>
+					<label>15052</label>
+					<font>Light32</font>
+					<textoffsetx>40</textoffsetx>
+					<textcolor>ff505153</textcolor>
+					<focusedcolor>ffffaf37</focusedcolor>
+					<texturefocus border="3">settings/button_focus.png</texturefocus>
+					<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				</control>
+			</control>
+			<!-- Button grouplist -->
+			<control id="9001" type="grouplist">
+				<right>24</right>
+				<bottom>33</bottom>
+				<width>351</width>
+				<height>400</height>
+				<onleft>9000</onleft>
+				<onright>noop</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<onback>9000</onback>
+				<itemgap>10</itemgap>
+				<align>right</align>
+				<!-- Cancel Button -->
+				<control id="19" type="button">
+					<width>351</width>
+					<height>76</height>
+					<aligny>top</aligny>
+					<font>Med24</font>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>27</textoffsety>
+					<label>222</label>
+					<visible>Control.IsEnabled(19)</visible>
+				</control>
+				<!-- OK Button -->
+				<control id="18" type="button">
+					<width>351</width>
+					<height>76</height>
+					<aligny>top</aligny>
+					<font>Med24</font>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>27</textoffsety>
+					<label>186</label>
+					<visible>Control.IsEnabled(18)</visible>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

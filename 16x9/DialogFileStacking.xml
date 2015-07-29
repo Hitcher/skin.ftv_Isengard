@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- filestackingdialog -->
+	<defaultcontrol always="true">450</defaultcontrol>
+	<controls>
+		<include>DialogBackgroundImage</include>
+		<!-- Main group -->
+		<control type="group">
+			<include>DialogAnimation</include>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>558</width>
+			<height>540</height>
+			<control type="image">
+				<width>558</width>
+				<height>540</height>
+				<texture>dialogs/filestacking_back.png</texture>
+			</control>
+			<!-- Heading -->
+			<control type="label">
+				<left>40</left>
+				<top>24</top>
+				<height>60</height>
+				<width>478</width>
+				<aligny>center</aligny>
+				<font>Bold30</font>
+				<label>33081</label>
+				<textcolor>ffdadada</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+			</control>
+			<!-- List -->
+			<control type="fixedlist" id="450">
+				<left>0</left>
+				<top>120</top>
+				<width>558</width>
+				<height>420</height>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<movement>2</movement>
+				<scrolltime>0</scrolltime>
+				<focusposition>2</focusposition>
+				<orientation>vertical</orientation>
+				<animation condition="StringCompare(Container(450).NumItems,0) | StringCompare(Container(450).NumItems,1) | [StringCompare(Container(450).NumItems,2) + [!StringCompare(Container(450).ListItem.Label,..) + !StringCompare(Container(450).ListItem(1).Label,..) + !StringCompare(Container(450).ListItem(2).Label,..)]]" effect="slide" end="0,-168">Conditional</animation>
+				<animation condition="[StringCompare(Container(450).NumItems,2) + [StringCompare(Container(450).ListItem.Label,..) | StringCompare(Container(450).ListItem(1).Label,..) | StringCompare(Container(450).ListItem(2).Label,..)]] | StringCompare(Container(450).NumItems,3) | [StringCompare(Container(450).NumItems,4) + [!StringCompare(Container(450).ListItem.Label,..) + !StringCompare(Container(450).ListItem(1).Label,..) + !StringCompare(Container(450).ListItem(2).Label,..) + !StringCompare(Container(450).ListItem(3).Label,..) + !StringCompare(Container(450).ListItem(4).Label,..)]]" effect="slide" end="0,-84">Conditional</animation>
+				<itemlayout height="84" width="558">
+					<control type="image">
+						<width>558</width>
+						<height>84</height>
+						<texture border="3">settings/button_no_focus.png</texture>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<width>478</width>
+						<height>84</height>
+						<font>Light32</font>
+						<textcolor>ff505153</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="84" width="558">
+					<control type="image">
+						<width>558</width>
+						<height>84</height>
+						<texture border="3">settings/button_focus.png</texture>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<width>478</width>
+						<height>84</height>
+						<font>Light32</font>
+						<textcolor>ffffaf37</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="image">
+				<top>120</top>
+				<width>558</width>
+				<height>84</height>
+				<visible>Container(450).HasPrevious</visible>
+				<texture border="2" diffuse="settings/mask.png" flipy="true">settings/mask_back.png</texture>
+			</control>
+			<control type="image">
+				<top>456</top>
+				<width>558</width>
+				<height>84</height>
+				<visible>Container(450).HasNext</visible>
+				<texture border="2" diffuse="settings/mask.png">settings/mask_back.png</texture>
+			</control>
+		</control>
+	</controls>
+</window>

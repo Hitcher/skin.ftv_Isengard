@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- peripherals -->
+	<defaultcontrol always="true">20</defaultcontrol>
+	<controls>
+		<include>DialogBackgroundImage</include>
+		<!-- Main group -->
+		<control type="group">
+			<include>DialogAnimation</include>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1337</width>
+			<height>480</height>
+			<animation condition="Window.IsVisible(settingscategory.xml)" effect="slide" end="0,-11">Conditional</animation>
+			<control type="image">
+				<width>1337</width>
+				<height>480</height>
+				<texture>dialogs/network_back.png</texture>
+			</control>
+			<!-- Heading -->
+			<control type="label" id="1">
+				<left>40</left>
+				<top>14</top>
+				<height>30</height>
+				<width>937</width>
+				<aligny>center</aligny>
+				<font>Bold30</font>
+				<label>35000</label>
+				<textcolor>ffdadada</textcolor>
+			</control>
+			<control type="fixedlist" id="20">
+				<top>60</top>
+				<width>937</width>
+				<height>420</height>
+				<onleft>noop</onleft>
+				<onright>9001</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<movement>1</movement>
+				<scrolltime>0</scrolltime>
+				<focusposition>1</focusposition>
+				<orientation>vertical</orientation>
+				<animation condition="StringCompare(Container(20).NumItems,0) | StringCompare(Container(20).NumItems,1) | [StringCompare(Container(20).NumItems,2) + [!StringCompare(Container(20).ListItem.Label,..) + !StringCompare(Container(20).ListItem(1).Label,..) + !StringCompare(Container(20).ListItem(2).Label,..)]]" effect="slide" end="0,-140">Conditional</animation>
+				<itemlayout height="140" width="937">
+					<control type="image">
+						<width>937</width>
+						<height>140</height>
+						<texture border="3">settings/button_no_focus.png</texture>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>26</top>
+						<width>857</width>
+						<height>40</height>
+						<font>Light32</font>
+						<textcolor>ff505153</textcolor>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Property(Version), V: ]</label>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>76</top>
+						<width>265</width>
+						<height>30</height>
+						<font>Light26</font>
+						<textcolor>ff505153</textcolor>
+						<label>[COLOR ffd8d8d8]$LOCALIZE[35504]:[/COLOR] $INFO[ListItem.Property(Product)]</label>
+					</control>
+					<control type="label">
+						<left>345</left>
+						<top>76</top>
+						<width>265</width>
+						<height>30</height>
+						<font>Light26</font>
+						<textcolor>ff505153</textcolor>
+						<label>[COLOR ffd8d8d8]$LOCALIZE[35503]:[/COLOR] $INFO[ListItem.Property(Vendor)]</label>
+					</control>
+					<control type="label">
+						<left>650</left>
+						<top>76</top>
+						<width>265</width>
+						<height>30</height>
+						<font>Light26</font>
+						<textcolor>ff505153</textcolor>
+						<label>[COLOR ffd8d8d8]$LOCALIZE[35501]:[/COLOR] $INFO[ListItem.Property(Class)]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="140" width="937">
+					<control type="image">
+						<width>937</width>
+						<height>140</height>
+						<texture border="3">settings/button_focus.png</texture>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>26</top>
+						<width>857</width>
+						<height>40</height>
+						<font>Light32</font>
+						<scroll>true</scroll>
+						<textcolor>ffffaf37</textcolor>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Property(Version), V: ]</label>
+						<visible>Control.HasFocus(20)</visible>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>26</top>
+						<width>857</width>
+						<height>40</height>
+						<font>Light32</font>
+						<textcolor>ffffffff</textcolor>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Property(Version), V: ]</label>
+						<visible>!Control.HasFocus(20)</visible>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>26</top>
+						<width>857</width>
+						<height>40</height>
+						<font>Light32</font>
+						<textcolor>ffffffff</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>!Control.HasFocus(20)</visible>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>76</top>
+						<width>265</width>
+						<height>30</height>
+						<font>Light26</font>
+						<textcolor>ff505153</textcolor>
+						<label>[COLOR ffd8d8d8]$LOCALIZE[35504]:[/COLOR] $INFO[ListItem.Property(Product)]</label>
+					</control>
+					<control type="label">
+						<left>345</left>
+						<top>76</top>
+						<width>265</width>
+						<height>30</height>
+						<font>Light26</font>
+						<textcolor>ff505153</textcolor>
+						<label>[COLOR ffd8d8d8]$LOCALIZE[35503]:[/COLOR] $INFO[ListItem.Property(Vendor)]</label>
+					</control>
+					<control type="label">
+						<left>650</left>
+						<top>76</top>
+						<width>265</width>
+						<height>30</height>
+						<font>Light26</font>
+						<textcolor>ff505153</textcolor>
+						<label>[COLOR ffd8d8d8]$LOCALIZE[35501]:[/COLOR] $INFO[ListItem.Property(Class)]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="grouplist" id="9001">
+				<right>24</right>
+				<bottom>33</bottom>
+				<width>351</width>
+				<height>420</height>
+				<onleft>20</onleft>
+				<onright>noop</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<onback>20</onback>
+				<itemgap>10</itemgap>
+				<align>right</align>
+				<!-- OK Button -->
+				<control type="button" id="10">
+					<width>351</width>
+					<height>76</height>
+					<aligny>top</aligny>
+					<font>Med24</font>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>27</textoffsety>
+					<label>186</label>
+					<visible>Control.IsEnabled(10)</visible>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

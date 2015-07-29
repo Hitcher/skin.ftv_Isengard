@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- progressdialog -->
+	<defaultcontrol always="true">10</defaultcontrol>
+	<controls>
+		<!-- Background -->
+		<include>DialogBackgroundImage</include>
+		<!-- Main group -->
+		<control type="group">
+			<include>DialogAnimation</include>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>716</width>
+			<height>295</height>
+			<!-- Background -->
+			<control type="image">
+				<centerleft>50%</centerleft>
+				<centertop>50%</centertop>
+				<width>100%</width>
+				<height>100%</height>
+				<include>MessageBackground</include>
+			</control>
+			<!-- Heading -->
+			<control id="1" type="label">
+				<centerleft>50%</centerleft>
+				<top>-16</top>
+				<width>100%</width>
+				<height>38</height>
+				<font>Bold38</font>
+				<textcolor>ffdadada</textcolor>
+			</control>
+			<!-- Details -->
+			<control id="9" type="textbox">
+				<centerleft>50%</centerleft>
+				<top>55</top>
+				<width>100%</width>
+				<height>110</height>
+				<font>Light28</font>
+				<textcolor>ff9d9d9d</textcolor>
+			</control>
+			<!--  Progress -->
+			<control id="20" type="progress">
+				<centerleft>50%</centerleft>
+				<top>186</top>
+				<width>100%</width>
+				<height>9</height>
+				<reveal>true</reveal>
+				<info>System.Progressbar</info>
+				<texturebg border="4">dialogs/progress_back.png</texturebg>
+				<lefttexture>-</lefttexture>
+				<midtexture border="4">dialogs/progress_bar.png</midtexture>
+				<righttexture>-</righttexture>
+				<overlaytexture>-</overlaytexture>
+			</control>
+			<!-- Cancel -->
+			<control id="10" type="button">
+				<centerleft>50%</centerleft>
+				<bottom>0</bottom>
+				<width>363</width>
+				<height>76</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<onleft>10</onleft>
+				<onright>noop</onright>
+				<font>MedUpper24</font>
+				<textoffsety>27</textoffsety>
+			</control>
+		</control>
+	</controls>
+</window>

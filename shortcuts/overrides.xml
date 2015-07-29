@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overrides>	
+	<icon labelID="13009">DefaultQuit.png</icon>
+	<icon labelID="20151">DefaultQuit.png</icon>
+	<icon labelID="13011">DefaultSleep.png</icon>
+	<icon labelID="13010">DefaultSleep.png</icon>
+	<icon labelID="13013">DefaultReboot.png</icon>
+	<icon labelID="13016">DefaultShutdown.png</icon>
+	<icon labelID="13005">DefaultShutdown.png</icon>
+	<icon labelID="19026">DefaultTimer.png</icon>
+	<icon labelID="20151">DefaultCancel_timer.png</icon>
+	<icon labelID="360">DefaultScreensaver.png</icon>
+	<icon labelID="20045">DefaultMastermode.png</icon>
+	<icon labelID="settings">DefaultSettings.png</icon>
+	<groupoverride group="shutdown" condition="true">Close</groupoverride>
+	<widgetPlaylists>True</widgetPlaylists>
+	<shortcut label="31167" type="movie" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/RecentlyAddedMovies.xsp,return)</shortcut>
+	<shortcut label="31168" type="movie" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/YourMovies.xsp,return)</shortcut>
+	<shortcut label="31169" type="movie" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/InProgressMovies.xsp,return)</shortcut>
+	<shortcut label="31170" type="movie" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/KidsMovies.xsp,return)</shortcut>
+	<shortcut label="31171" type="movie" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/ActionAdventureMovies.xsp,return)</shortcut>
+	<shortcut label="31172" type="movie" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/ComedyMovies.xsp,return)</shortcut>
+	<shortcut label="31173" type="movie" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/SciFiMovies.xsp,return)</shortcut>
+	<shortcut label="31174" type="movie" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/TopRatedMovies.xsp,return)</shortcut>	
+	<shortcut label="31175" type="tvshow" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/RecentlyUpdatedTVShows.xsp,return)</shortcut>
+	<shortcut label="31176" type="tvshow" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/YourTVShows.xsp,return)</shortcut>
+	<shortcut label="31177" type="tvshow" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/InProgressTVShows.xsp,return)</shortcut>
+	<shortcut label="31178" type="tvshow" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/KidsTVShows.xsp,return)</shortcut>
+	<shortcut label="31179" type="tvshow" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/ActionAdventureTVShows.xsp,return)</shortcut>
+	<shortcut label="31180" type="tvshow" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/ComedyTVShows.xsp,return)</shortcut>
+	<shortcut label="31181" type="tvshow" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/SciFiTVShows.xsp,return)</shortcut>
+	<shortcut label="31182" type="tvshow" grouping="video" icon="ftv_icon.png">ActivateWindow(Videos,special://skin/extras/video/TopRatedTVShows.xsp,return)</shortcut>	
+	<shortcut label="31183" type="music" grouping="music" icon="ftv_icon.png">ActivateWindow(MusicLibrary,musicdb://recentlyplayedalbums/,return)</shortcut>
+	<shortcut label="31184" type="music" grouping="music" icon="ftv_icon.png">ActivateWindow(MusicLibrary,musicdb://albums/,return)</shortcut>
+	<shortcut label="31185" type="music" grouping="music" icon="ftv_icon.png">ActivateWindow(MusicLibrary,musicdb://recentlyaddedalbums/,return)</shortcut>
+	<shortcut label="31186" type="music" grouping="music" icon="ftv_icon.png">ActivateWindow(MusicLibrary,musicdb://artists/,return)</shortcut>
+	<shortcut label="31187" type="music" grouping="music" icon="ftv_icon.png">ActivateWindow(MusicLibrary,musicdb://genres/,return)</shortcut>
+	<shortcut label="31188" type="music" grouping="music" icon="ftv_icon.png">ActivateWindow(MusicLibrary,musicdb://top100/albums/,return)</shortcut>
+	<shortcut label="31189" type="music" grouping="music" icon="ftv_icon.png">ActivateWindow(MusicLibrary,musicdb://top100/songs/,return)</shortcut>
+	<shortcut label="31190" type="music" grouping="music" icon="ftv_icon.png">ActivateWindow(MusicLibrary,musicdb://songs/,return)</shortcut>
+</overrides>

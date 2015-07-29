@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- profilesettings -->
+	<defaultcontrol always="true">5</defaultcontrol>
+	<controls>
+		<include>DialogBackgroundImage</include>
+		<!-- Main group -->
+		<control type="group">
+			<include>DialogAnimation</include>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1337</width>
+			<height>480</height>
+			<animation condition="Window.IsVisible(profiles)" effect="slide" end="0,-11">Conditional</animation>
+			<control type="image">
+				<width>1337</width>
+				<height>480</height>
+				<texture>dialogs/network_back.png</texture>
+			</control>
+			<!-- Heading -->
+			<control type="label" id="2">
+				<left>40</left>
+				<top>14</top>
+				<height>30</height>
+				<width>937</width>
+				<aligny>center</aligny>
+				<font>Bold30</font>
+				<label>20043</label>
+				<textcolor>ffdadada</textcolor>
+			</control>
+			<!-- Grouplist -->
+			<control type="grouplist" id="5">
+				<top>60</top>
+				<width>937</width>
+				<height>420</height>
+				<itemgap>0</itemgap>
+				<onleft>noop</onleft>
+				<onright>9001</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<scrolltime>0</scrolltime>
+				<orientation>vertical</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+			</control>
+			<!-- Default button -->
+			<control type="button" id="7">
+				<width>937</width>
+				<height>84</height>
+				<font>Light32</font>
+				<textoffsetx>40</textoffsetx>
+				<textcolor>ff505153</textcolor>
+				<focusedcolor>ffffaf37</focusedcolor>
+				<texturefocus border="3">settings/button_focus.png</texturefocus>
+				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+			</control>
+			<!-- Default radiobutton -->
+			<control type="radiobutton" id="8">
+				<width>937</width>
+				<height>84</height>
+				<font>Light32</font>
+				<textwidth>738</textwidth>
+				<textoffsetx>40</textoffsetx>
+				<textcolor>ff505153</textcolor>
+				<focusedcolor>ffffaf37</focusedcolor>
+				<radiowidth>125</radiowidth>
+				<radioheight>53</radioheight>
+				<radioposx>773</radioposx>
+				<textureradioonfocus>settings/radio_on_focus.png</textureradioonfocus>
+				<textureradioonnofocus>settings/radio_on_no_focus.png</textureradioonnofocus>
+				<textureradioofffocus>settings/radio_off_focus.png</textureradioofffocus>
+				<textureradiooffnofocus>settings/radio_off_no_focus.png</textureradiooffnofocus>
+				<texturefocus border="3">settings/button_focus.png</texturefocus>
+				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+			</control>
+			<!-- Default spincontrolex -->
+			<control type="spincontrolex" id="9">
+				<width>937</width>
+				<height>84</height>
+				<font>Light32</font>
+				<textwidth>738</textwidth>
+				<textoffsetx>40</textoffsetx>
+				<textcolor>ff505153</textcolor>
+				<focusedcolor>ffffaf37</focusedcolor>
+				<selectedcolor2>ffffffff</selectedcolor2>
+				<texturefocus border="3">settings/button_focus.png</texturefocus>
+				<texturenofocus border="3">settings/button_no_focus.png</texturenofocus>
+				<aligny>center</aligny>
+				<reverse>yes</reverse>
+			</control>
+			<control type="image" id="11">
+				<top>-1</top>
+				<height>1</height>
+				<texture>-</texture>
+			</control>
+			<control type="image" id="101">
+				<left>1016</left>
+				<top>27</top>
+				<width>256</width>
+				<height>256</height>
+				<aspectratio>keep</aspectratio>
+				<bordersize>0,0,13,17</bordersize>
+				<texture>unknown-user.png</texture>
+				<bordertexture border="14,18,14,18">dialogs/shadow.png</bordertexture>
+			</control>
+			<control type="grouplist" id="9001">
+				<right>24</right>
+				<bottom>33</bottom>
+				<width>351</width>
+				<height>420</height>
+				<onleft>5</onleft>
+				<onright>noop</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<onback>5</onback>
+				<itemgap>10</itemgap>
+				<align>right</align>
+				<!-- Cancel Button -->
+				<control type="button" id="29">
+					<width>351</width>
+					<height>76</height>
+					<aligny>top</aligny>
+					<font>Med24</font>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>27</textoffsety>
+					<label>222</label>
+					<visible>Control.IsEnabled(29)</visible>
+				</control>
+				<!-- OK Button -->
+				<control type="button" id="28">
+					<width>351</width>
+					<height>76</height>
+					<aligny>top</aligny>
+					<font>Med24</font>
+					<textoffsetx>23</textoffsetx>
+					<textoffsety>27</textoffsety>
+					<label>186</label>
+					<visible>Control.IsEnabled(28)</visible>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

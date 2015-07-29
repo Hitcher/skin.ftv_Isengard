@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- visualisationpresetlist -->
+	<defaultcontrol always="true">5</defaultcontrol>
+	<controls>
+		<control type="group">
+			<top>655</top>
+			<!-- Background -->
+			<control type="image">
+				<width>1920</width>
+				<height>425</height>
+				<texture>osd/mask.png</texture>
+			</control>
+			<!-- Heading label -->
+			<control type="label" id="2">
+				<left>92</left>
+				<top>20</top>
+				<height>36</height>
+				<font>Bold30</font>
+				<textcolor>ffdadada</textcolor>
+			</control>
+			<!--No Settings Label-->
+			<control type="label" id="4">
+				<left>95</left>
+				<top>70</top>
+				<width>1870</width>
+				<height>58</height>
+				<font>Light32</font>
+				<textcolor>ffffffff</textcolor>
+				<label>13389</label>
+			</control>
+			<!-- Preset List -->
+			<control type="list" id="5">
+				<left>95</left>
+				<top>60</top>
+				<width>1870</width>
+				<height>348</height>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<scrolltime>0</scrolltime>
+				<orientation>vertical</orientation>
+				<itemlayout width="1870" height="58">
+					<control type="label">
+						<width>1870</width>
+						<height>58</height>
+						<font>Light32</font>
+						<textcolor>ffffffff</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout width="1870" height="58">
+					<control type="label">
+						<width>1870</width>
+						<height>58</height>
+						<font>Light32</font>
+						<textcolor>ffffc04b</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+	</controls>
+</window>
